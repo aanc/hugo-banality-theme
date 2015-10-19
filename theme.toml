@@ -1,0 +1,14 @@
+name = "Banality"
+license = "MIT"
+licenselink = "https://github.com/nwknu/hugo-banality-theme/blob/master/LICENSE.md"
+description = "A simple Hugo theme"
+homepage = "http://nknu.net/"
+tags = ["blog"]
+features = ["blog"]
+min_version = 0.13
+
+[author]
+  name = "Adrien Anceau <adrien.anceau@gmail.com>"
+  homepage = "http://nknu.net"
+
+

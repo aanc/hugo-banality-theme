@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-10">
+      {{ range .Data.Pages }}
+      <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+      <div class="article-tags">
+        <a href="/tag/ubuntu-2/">Bam</a> | <a href="/tag/docker/">pwet</a> | <a href="/tag/workaround/">workaround</a> | <a href="/tag/15-04/">15.04</a> | <a href="/tag/vivid/">vivid</a>
+      </div>
+      <div class="article-content">
+        <p>{{ .Summary }}</p>
+        <p class="small"><a href="{{ .Permalink }}">Read More »</a></p>
+      </div>
+      <hr/>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ partial "footer.html" . }}
