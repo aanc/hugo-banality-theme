@@ -73,8 +73,9 @@ header nav a {
   transition: all 0.3s;
   text-shadow: 1px 1px 15px #353D3B;
 }
-header nav a:hover, header nav a:visited {
+header nav a:hover, header nav a:visited, header h1#logo a:hover, header h1#logo a:visited {
   color: white;
+  text-decoration: none;
 }
 header.smaller {
   height: 75px;
