@@ -4,10 +4,12 @@
   <div class="row">
     <div class="col-sm-offset-1 col-sm-10">
       <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-      <p class="small gray"><time datetime="{{ .Date.Format "2006-01-30" }}">{{ .Date.Format "Jan 01, 2006" }}</time></p>
       <div class="article-tags">
-        <a href="/tag/ubuntu-2/">Bam</a> | <a href="/tag/docker/">pwet</a> | <a href="/tag/workaround/">workaround</a> | <a href="/tag/15-04/">15.04</a> | <a href="/tag/vivid/">vivid</a>
+        {{ range .Params.tags }}
+          <a href="tags/{{ . | urlize }}"><span class="label label-success">{{ . }}</span></a>
+        {{ end }}
       </div>
+      <p class="small gray"><time datetime="{{ .Date.Format "2006-01-30" }}">{{ .Date.Format "Jan 01, 2006" }}</time></p>
       <div class="article-content">
         <p>{{ .Content }}</p>
         <p class="small"><a href="{{ .Permalink }}">Read More »</a></p>
