@@ -129,11 +129,25 @@ header.smaller nav a {
 }
 
 a:link, a:visited {
-  color: #55c37f;
+  color: #50bb78;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 500;
   margin-bottom: 10px;
+}
+
+/* Pagination */
+.custom-pagination {
+  text-align: center;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  background-color: #3d8b5b;
+  border-color: #3d8b5b;
+}
+
+.pagination>li>a, .pagination>li>span {
+  color: #3d8b5b;
 }

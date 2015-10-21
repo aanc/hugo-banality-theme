@@ -3,7 +3,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-offset-1 col-sm-10">
-      {{ range .Data.Pages }}
+      {{ range .Paginator.Pages }}
       <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
       <div class="article-tags">
         {{ range .Params.tags }}
@@ -17,6 +17,9 @@
       </div>
       <hr/>
       {{ end }}
+      <div class="custom-pagination">
+        {{ template "_internal/pagination.html" . }}
+      <div>
     </div>
   </div>
 </div>
