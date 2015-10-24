@@ -12,8 +12,10 @@
       <p class="small gray"><time datetime="{{ .Date.Format "2006-01-30" }}">{{ .Date.Format "Jan 01, 2006" }}</time></p>
       <div class="article-content">
         <p>{{ .Content }}</p>
-        <p class="small"><a href="{{ .Permalink }}">Read More »</a></p>
       </div>
+    </div>
+    <div class="col-sm-1">
+      {{ partial "author.html" . }}
     </div>
   </div>
 </div>
