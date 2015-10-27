@@ -10,6 +10,7 @@ function init() {
     } else {
       if (header.classList.contains("smaller")) {
         header.classList.remove("smaller");
+
         backToTop.classList.remove("visible");
       }
     }
