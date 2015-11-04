@@ -3,11 +3,15 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+a:link, a:visited {
+  color: #50bb78;
+}
+
 .article-content {
   text-align: justify;
-  font-weight: 300;
   font-size: 16px;
   line-height: 1.8;
+  color: rgb(92, 92, 92);
 }
 
 .article-tags {
@@ -68,24 +72,8 @@ header h1#logo {
 
   margin: auto;
 }
-header nav {
-  display: inline-block;
-  float: right;
-}
-header nav a {
-  line-height: 150px;
-  margin-left: 20px;
-  color: white;
-  font-weight: 700;
-  font-size: 18px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  text-shadow: 1px 1px 15px #353D3B;
-}
-header nav a:hover, header nav a:visited, header h1#logo a:hover, header h1#logo a:visited {
+
+header h1#logo a:hover, header h1#logo a:visited, header h1#logo a {
   color: white;
   text-decoration: none;
 }
@@ -98,10 +86,6 @@ header.smaller h1#logo {
   line-height: 75px;
   font-size: 30px;
 }
-header.smaller nav a {
-  line-height: 75px;
-  color: white;
-}
 
 @media all and (max-width: 660px) {
   header h1#logo {
@@ -112,17 +96,6 @@ header.smaller nav a {
     line-height: 100px;
     text-align: center;
   }
-  header nav {
-    display: block;
-    float: none;
-    height: 50px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  header nav a {
-    line-height: 50px;
-    margin: 0 10px;
-  }
   header.smaller {
     height: 75px;
   }
@@ -132,16 +105,6 @@ header.smaller nav a {
     font-size: 30px;
     margin: 0;
   }
-  header.smaller nav {
-    height: 35px;
-  }
-  header.smaller nav a {
-    line-height: 35px;
-  }
-}
-
-a:link, a:visited {
-  color: #50bb78;
 }
 
 h1, h2, h3, h4, h5, h6 {
