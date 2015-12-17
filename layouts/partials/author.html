@@ -1,5 +1,12 @@
-<div class="author">
+<author>
   <div class="author-title">Author</div>
-  <img src="http://www.gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=100" alt="" class="pull-left"/>
-  {{ .Site.Params.author }}
-</div>
+  <img class="author-photo" src="http://www.gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=100"/>
+  <div class="author-name">{{ .Site.Params.author }}</div>
+  <div class="author-bio">{{ .Site.Params.bio }}</div>
+
+  <div class="social">
+    {{ if .Site.Params.twitter }}
+    <a target="_blank" href="http://twitter.com/{{ .Site.Params.twitter }}"><img src='/img/twitter.png' /></a>
+    {{ end }}
+  </div>
+</author>
