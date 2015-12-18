@@ -144,26 +144,30 @@ author .author-title {
 author .author-name {
   line-height: 1.5;
   font-weight: 700;
-  text-align: center;
+  text-align: right;
+  width: 100%;
+  color: #6D6D6D;
+  margin-top: 1.7em;;
 }
 
 author .author-bio {
-  text-align: center;
-  margin-top: 15px;
+  text-align: right;
+  margin-top: 1.3em;
+  margin-bottom: 1.7em;
   font-size: 0.9em;
+  color: #989898;
 }
 
 author .author-photo {
-  margin: 5px;
-  float: left;
-  border: 2px solid rgb(54, 64, 53);
-  box-shadow: 1px 1px 7px rgb(54, 64, 53);
-  display: inline-block;
-  border-radius: 7%;
+  margin-top: 3em;
+  box-shadow: 1px 3px 11px rgb(54, 64, 53);
+  border-radius: 5%;
+  width: 100%;
 }
 
 div.social {
-  text-align: center;
+
+  text-align: right;
   margin-top: 15px;
 }
 
