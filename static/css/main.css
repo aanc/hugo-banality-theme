@@ -14,6 +14,14 @@ a:link, a:visited {
   color: rgb(92, 92, 92);
 }
 
+.article-content table {
+    width: 100%;
+}
+.article-content table td {
+    border: 1px solid #a6b3a2;
+    padding: 5px;
+}
+
 .article-content img {
   max-width: 100%;
 }
